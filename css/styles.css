@@ -1,0 +1,146 @@
+/* ******************************************************************************************************************** */
+  /* Fuentes de Google */
+  @import url('https://fonts.googleapis.com/css?family=Muli:400,700&display=swap');
+  /*  *//* CSS para insertar fuentes descargadas de IcoMoon.io */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?l9k7u5');
+    src:  url('fonts/icomoon.eot?l9k7u5#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?l9k7u5') format('truetype'),
+      url('fonts/icomoon.woff?l9k7u5') format('woff'),
+      url('fonts/icomoon.svg?l9k7u5#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-nginx:before {
+    content: "\e900";
+    color: #269539;
+  }
+  .icon-postgresql:before {
+    content: "\e901";
+    color: #336791;
+  }
+  .icon-mongodb:before {
+    content: "\e902";
+    color: #47a248;
+  }
+  .icon-django:before {
+    content: "\e903";
+  }
+  .icon-python:before {
+    content: "\e904";
+    color: #3776ab;
+  }
+  .icon-javascript:before {
+    content: "\e905";
+    color: #f7df1e;
+  }
+  .icon-book:before {
+    content: "\e91f";
+  }
+  .icon-article:before {
+    content: "\e926";
+  }
+  .icon-envelop:before {
+    content: "\e945";
+  }
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  .icon-earth:before {
+    content: "\e9ca";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-github:before {
+    content: "\eab0";
+  }
+  .icon-linkedin:before {
+    content: "\eac9";
+  }
+  .icon-html-five:before {
+    content: "\eae4";
+  }
+  .icon-css3:before {
+    content: "\eae6";
+  }
+    /* ******************************************************************************************************************** */
+  /* Variables Globales */
+  :root{
+    font-size: 24px;
+    font-family: 'Muli', sans-serif;
+    --color-palette-1:#e9e6c9;
+    --color-palette-2:#ca6144;
+    --color-palette-3:#566683;
+    --color-palette-4:#393e51;
+  }
+/* ******************************************************************************************************************** */
+  /* Estilos del body */
+  body{
+    background-color: var(--color-palette-1);
+    color: var(--color-palette-3);
+    line-height: 1.5rem;
+  }
+
+  .header{
+    background-color: var(--color-palette-4);
+    color: var(--color-palette-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-icon{
+    padding:0.5rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .logo-text{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .menu-list{
+    list-style: none;
+    padding: 0;
+    display:flex;
+  }
+
+  .menu-list-item{
+    padding-right: 1rem;
+  }
+
+  .menu-list-item a, a:visited{
+    text-decoration: none;
+    color: var(--color-palette-1);
+
+  }
+
+  .menu-list-item a:active, a:hover{
+    color: var(--color-palette-2);
+    
+  }
