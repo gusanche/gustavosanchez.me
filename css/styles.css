@@ -172,6 +172,10 @@
   width: 100%;
   height: 300px;
 }
+
+.main-aboutme-text{
+  text-align: center;
+}
 /* ******************************************************************************************************************** */
 /* Estilos para mi ruta de aprendizaje */
 .main-myjourney{
@@ -230,4 +234,79 @@
 .img-midi{
   width: 60%;
   height: 60%;
+}
+/* ******************************************************************************************************************** */
+/* Estilos para mi ruta de footer */
+.footer{
+  background-color: var(--color-palette-3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: var(--color-palette-1);
+  line-height: 1rem;
+  padding: 0.2rem;
+}
+
+.social-contact{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-right: 0 auto;
+}
+
+.social-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.3rem;
+}
+
+.footer-logo{
+  width: 70%;
+  height: 70%;
+}
+
+.footer-name{
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.social-networks a{
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.icon-linkedin, .icon-twitter, .icon-github{
+  padding: 0.5rem;
+}
+
+.email-contact{
+  display: flex;
+  align-items: center;
+}
+
+.email-contact p{
+  font-size: 0.7rem;
+  padding-right: 0.4rem;
+}
+
+.email-text{
+  font-size: 0.6rem;
+  border-radius: 5px;
+}
+.email-button{
+  border-radius: 0.4rem;
+  font-size: 0.6rem;
+}
+
+.copyright{
+  background-color: var(--color-palette-4);
+  color: var(--color-palette-1);
+  text-align:center;
+  font-size: 0.5rem;
+}
+
+.copyright p{
+  padding:0;
+  margin: 0;
 }
