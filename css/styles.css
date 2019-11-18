@@ -116,6 +116,12 @@
     line-height: 1.5rem;
   }
 
+  .container{
+    width: 90%;
+    max-width: 1536px;
+    margin: 0 auto;
+  }
+
   .header{
     background-color: var(--color-palette-4);
     color: var(--color-palette-1);
@@ -138,6 +144,10 @@
   .logo-text{
     font-size: 1.5rem;
     font-weight: bold;
+  }
+
+  .navigation{
+    display: flex;
   }
 
   .menu-list{
@@ -251,7 +261,7 @@
 
 .main-resources-icon-list{
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 2rem 0;
 }
 
