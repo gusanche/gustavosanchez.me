@@ -236,6 +236,36 @@
   height: 60%;
 }
 /* ******************************************************************************************************************** */
+/* Recursos */
+.main-resources{
+  display: block;
+}
+
+.main-resources h2{
+  text-align: center;
+}
+
+.main-resources-text{
+  text-align: center;
+}
+
+.main-resources-icon-list{
+  text-align: center;
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+
+.main-resources-icon-list a, a:visited a:active{
+  text-decoration: none;
+  color: var(--color-palette-2);
+  
+}
+
+.main-resources-icon-list a:hover{
+  color: var(--color-palette-4);
+}
+
+/* ******************************************************************************************************************** */
 /* Estilos para mi ruta de footer */
 .footer{
   background-color: var(--color-palette-3);
