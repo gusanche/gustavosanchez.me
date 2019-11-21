@@ -84,6 +84,7 @@
 }
 .icon-code:before {
   content: "\ea80";
+  color: var(--color-palette-2);
 }
 .icon-html-five:before {
   content: "\eae4";
