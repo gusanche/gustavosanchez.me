@@ -322,8 +322,10 @@
   border: 2px solid var(--color-palette-2); 
   border-radius: 20px;
   height: auto;
-  width: 18rem;
+  width: 16rem;
   overflow: hidden;
+  flex-shrink: 0;
+  background-color: var(--color-palette-3);
 }
 
 .portfolio-project-image{
@@ -332,7 +334,6 @@
   padding: 0;
   margin:0;
   border: 0;
-  
 }
 
 .project-image{
@@ -341,33 +342,38 @@
 }
 
 .project-portfolio-content{
-  /* border: 1px solid var(--color-palette-3); */
-  width:80%;
+  width:85%;
   text-align: center;
   align-items: center;
-  margin: 0 auto;
-  background-color: var(--color-palette-4);
+  margin: 0.5rem auto;
+  background-color: var(--color-palette-1);
   padding-bottom: 0.1rem;
-  /* border-radius: 10px; */
+  margin-top: -3.5rem;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid var(--color-palette-3);
 }
 
 .portfolio-project-title{
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
-  margin-top: 0.5rem;
-  margin-bottom: 0.8rem;
-  background-color: var(--color-palette-2);
+  padding-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  color: var(--color-palette-4);
 }
+
 .portfolio-project-description{
   text-align:center;
   font-size: 0.7rem;
   line-height: 1rem;
-  color:var(--color-palette-1);
+  color:var(--color-palette-4);
+  padding:0.2rem;
+
 }
 
 .portfolio-project-pointer{
-  color: var(--color-palette-1);
+  
   border-radius: 20px;
   padding: 0;
   width:50%;
@@ -379,6 +385,11 @@
 
 .portfolio-project-pointer a{
   text-decoration: none;
+  color: var(--color-palette-1)
+}
+
+.portfolio-project-pointer a:hover{
+  color: var(--color-palette-4)
 }
 /* ******************************************************************************************************************** */
 /* Recursos */
@@ -394,22 +405,38 @@
   text-align: center;
 }
 
-.main-resources-icon-list{
+
+.main-resources-table {
   text-align: center;
-  font-size: 4rem;
-  margin: 2rem 0;
+  align-items: center;
+  margin:0 auto;
+  margin: 1rem;
+  font-size: 0.7rem;
+  
+
 }
 
-.main-resources-icon-list a, a:visited a:active{
-  text-decoration: none;
-  color: var(--color-palette-2);
+.main-resources-table th, td{
+  border: 1px solid black;
   
 }
 
-.main-resources-icon-list a:hover{
-  color: var(--color-palette-4);
+.main-resources-table td{
+  text-align: left;
 }
 
+.resource-table{
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.resource-table th{
+  padding:1rem;
+}
+
+.resource-table span{
+  color: var(--color-palette-2);
+}
 /* ******************************************************************************************************************** */
 /* Estilos para mi ruta de footer */
 .footer{
