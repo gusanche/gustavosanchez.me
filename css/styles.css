@@ -537,7 +537,7 @@
 /* ******************************************************************************************************************** */
 /* ******************************************************************************************************************** */
 /* ******************************************************************************************************************** */
-/* Ajustes de media queries */
+/* Ajustes de media queries 1264px */
 @media screen and (max-width:1264px) {
 
   .logo-icon{
@@ -583,7 +583,7 @@
     margin-top:1rem;
   }
 }
-
+/* Ajustes de media queries 767px */
 @media screen and (max-width:767px) {
   
   .main-image {
@@ -707,9 +707,9 @@
   }
 }
 
+/* Ajustes de media queries 384px */
 @media screen and (max-width:384px) {
 
-  
   .footer-name {
     font-size: 0.4rem;
   }

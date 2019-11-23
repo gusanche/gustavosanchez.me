@@ -1,3 +1,5 @@
+//Javascript para activar burger button en media queries
+
 const menu = document.querySelector('.menu-list')
 const burgerButton = document.querySelector('#burger-menu')
 
@@ -11,6 +13,3 @@ function hideShow(){
         menu.classList.add('show')
     }
 }
-
-
-
