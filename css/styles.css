@@ -2,11 +2,11 @@
   /* Fuentes de Google */
   @font-face {
     font-family: 'icomoon';
-    src:  url('/fonts/icomoon.eot?4xksl0');
-    src:  url('/fonts/icomoon.eot?4xksl0#iefix') format('embedded-opentype'),
-      url('/fonts/icomoon.ttf?4xksl0') format('truetype'),
-      url('/fonts/icomoon.woff?4xksl0') format('woff'),
-      url('/fonts/icomoon.svg?4xksl0#icomoon') format('svg');
+    src:  url('../fonts/icomoon.eot?4xksl0');
+    src:  url('../fonts/icomoon.eot?4xksl0#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?4xksl0') format('truetype'),
+      url('../fonts/icomoon.woff?4xksl0') format('woff'),
+      url('../fonts/icomoon.svg?4xksl0#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
