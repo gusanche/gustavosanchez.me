@@ -1,14 +1,12 @@
 /* ******************************************************************************************************************** */
   /* Fuentes de Google */
-  @import url('https://fonts.googleapis.com/css?family=Muli:400,700&display=swap');
-  /*  *//* CSS para insertar fuentes descargadas de IcoMoon.io */
   @font-face {
     font-family: 'icomoon';
-    src:  url('/fonts/icomoon.eot?93lnf8');
-    src:  url('/fonts/icomoon.eot?93lnf8#iefix') format('embedded-opentype'),
-      url('/fonts/icomoon.ttf?93lnf8') format('truetype'),
-      url('/fonts/icomoon.woff?93lnf8') format('woff'),
-      url('/fonts/icomoon.svg?93lnf8#icomoon') format('svg');
+    src:  url('/fonts/icomoon.eot?4xksl0');
+    src:  url('/fonts/icomoon.eot?4xksl0#iefix') format('embedded-opentype'),
+      url('/fonts/icomoon.ttf?4xksl0') format('truetype'),
+      url('/fonts/icomoon.woff?4xksl0') format('woff'),
+      url('/fonts/icomoon.svg?4xksl0#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -28,7 +26,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
+.icon-menu:before {
+    content: "\e907";
+}
+
 .icon-route:before {
     content: "\e906";
   }
@@ -136,6 +138,7 @@
     right: 0rem;
     position: fixed;
     z-index: 2;
+    flex-wrap: wrap;
   }
 
   .logo{
@@ -152,6 +155,10 @@
   .logo-text{
     font-size: 1.5rem;
     font-weight: bold;
+  }
+
+  .hamburguer-menu{
+    display:none;
   }
 
   .navigation{
@@ -225,7 +232,7 @@
 
 .main-aboutme-image{
   width: 50%;
-  margin: 0;
+  margin-top:3rem;
   padding: 0;
   text-align: center;
 }
@@ -467,7 +474,7 @@
   display: flex;
   text-align: center;
   align-items: center;
-  margin-right: 0 auto;
+  /* margin-right: 0 auto; */
 }
 
 .social-logo{
@@ -531,8 +538,25 @@
 /* ******************************************************************************************************************** */
 /* ******************************************************************************************************************** */
 /* Ajustes de media queries */
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1264px) {
 
+  .logo-icon{
+    padding: 0.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .logo-text{
+    font-size: 0.6rem;
+  }
+
+  .navigation{
+    font-size: 0.5rem;
+  }
+
+  .main-image {
+    margin-top: 2.5rem;
+  }
   .main-aboutme-text{
     width: 100%;
     display: block;
@@ -554,10 +578,43 @@
   .email-contact{
     margin: 0 auto;
   }
+
+  .main-aboutme-image{
+    margin-top:1rem;
+  }
 }
 
 @media screen and (max-width:767px) {
+  
+  .main-image {
+    margin-top: 2.0rem;
+  }
 
+  .hamburguer-menu{
+    display:block;
+    cursor: pointer;
+    padding-right: 1rem;
+  }
+
+  .navigation {
+    width: 100%;
+  }
+
+  .navigation ul{
+    display: none;
+  }
+
+  .navigation ul.show{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-list-item {
+    padding-right: 0;
+    line-height: 1rem;
+  }
+ 
   .main-aboutme-title{
     margin:0.5rem;
   }
@@ -584,9 +641,18 @@
     width: 70%;
     margin: 0 auto;
   }
-  
+
+  .main-myjourney-text {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
   .myjourney-articles-step{
     margin: 0.5rem;
+  }
+
+  .main-portfolio-text{
+    font-size: 0.7rem;
+    line-height: 1rem;
   }
 
   .portfolio-project{
@@ -594,6 +660,10 @@
     flex-shrink:1;
   }
 
+  .main-resources-text{
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
   .main-resources-table {
     margin:0.3rem;
   }
@@ -631,11 +701,21 @@
   .email-submit-form{
     margin-bottom: 0.5rem;
   }
+
+  .social-contact {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width:384px) {
+
+  
   .footer-name {
     font-size: 0.4rem;
+  }
+
+  .social-contact {
+    margin: 0 auto;
   }
 
   .icon-linkedin, .icon-twitter, .icon-github {
