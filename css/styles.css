@@ -499,8 +499,18 @@
   font-size: 1.3rem;
 }
 
+.social-networks a:link, a:visited{
+  color: var(--color-palette-1);
+}
+
+.social-networks a:hover, a:active{
+  color: var(--color-palette-2);
+}
+
+
 .icon-linkedin, .icon-twitter, .icon-github{
   padding: 0.5rem;
+  /* color: var(--color-palette-1); */
 }
 
 .email-contact{
